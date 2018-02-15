@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="Aquí irá la descripción de mi página web">
+            <link rel="stylesheet" href="estilo1.CSS">
+            <link rel="shortcut icon" href="img/favicon.png"/>
+        </head>
+        <body>
+            <header>
+                <h1> VISITE TOLEDO A VISTA DE ÁGUILA </h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="visitar.html"> ¿Qué visitar? </a></li>
+                    <li><a href="comer.html"> ¿Dónde comer? </a></li>
+                    <li><a href="dormir.html"> ¿Dónde dormir? </a></li>
+                    <li><a href="llegar.html"> ¿Cómo llegar? </a></li>
+                </ul>
+            </nav>
+            <section>
+                <p class="textoanimado"> Toledo, ciudad patrimonio de la Humanidad. </p>
+                <p class="segundoparrafo"> Toledo, ciudad 100% recomedada para visitar. </p>
+                <p id="tercerparrafo"> Mi tercer párrafo </p>
+                <p id="cuartoparrafo"> Mi cuarto párrafo </p>
+                <img src="img/toledo.jpg" width=100% alt="Toledo" title="Vista panorámica de Toledo">
+            </section>
+            <aside>
+                <h2> Contacte con nosotros para hacer la reserva en nuestro hotel </h2>
+                <div id="cajaarchivo">
+                <form name="mi formulario" id="miformulario" method="post" enctype="multiplart/form-data">
+                    <input type="text" name="nombre" id="nombre"
+                    placeholder="Nombre">
+                    <input type="text" name="apellidos" id="apellidos"
+                    placeholder="Apellidos">
+                    <br>
+                    <br>
+                    <input type="email" name="miemail" id="miemail" required
+                    placeholder="Email">
+                    <input type="edad" name="numero" id="numero" min="0" max="120"
+                    placeholder="Edad">
+                    <br>
+                    <br>
+                    <input type="date" name="fecha" id="fecha">
+                    <input pattern="[0-9]{5}" name="codigopostal" id="codigopostal" title="inserte los números de su código postal"
+                    placeholder="Código Postal">
+                    <br>
+                    <br>
+                    <input type="color" name="micolor" id="color">
+                    <input pattern="[0-9]{8}[a-Z]{1}" name="dni" id="dni" title="inserte su DNI" required
+                    placeholder="DNI">
+                    <br>
+                    <br>
+                    <input type="radio" name="sexo" value="Mujer"> Mujer
+                    <input type="radio" name="sexo" value="Hombre"> Hombre
+                    <br>
+                    <br>
+                    <datalist id="telefonos">
+                        <option value="123123123" label="Teléfono 1"> </option>
+                        <option value="456456456" label="Teléfono 2"> </option>
+                        <option value="789789789" label="Teléfono 3"> </option>
+                    </datalist>
+                    <input type="tel" name="telefono" id="telefono" list="telefonos"
+                    placeholder="Teléfono">
+                    <select name="provincias" required>
+                        <option value="_"> Elige provincia </option>
+                        <option value="TO"> Toledo </option>
+                        <option value="MA"> Madrid </option>
+                        <option value="CR"> Ciudad Real </option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="file" name="foto">
+                    <br>
+                    <br>
+                    <input type="checkbox" name="terminosycondiciones" required> No he leído pero acepto las condiciones legales.
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </div>
+                </form> 
+            </aside>
+            <footer>
+                <p> GRACIAS POR ELEGIR ESTA CIUDAD </p>
+            </footer>
+        </body>
+    </html>
+    

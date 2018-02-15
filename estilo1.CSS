@@ -1,0 +1,91 @@
+h1{
+                    color:white;
+                    background-color: #81F79F;
+                    font-size:80px;
+                    text-align: center; 
+}
+nav{
+                    color:black;
+                    text-align: center;
+                    font-size: 30px;
+                    height: 50px; 
+}
+nav ul li{
+                    display: inline;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    box-shadow: 10px 10px 10px #BDBDBD; 
+                    margin: 50px;
+                    padding: 15px 15px 15px 15px;
+                    background-color: white; 
+}
+.segundoparrafo{
+                    
+                    background-color:#D358F7;
+                    text-align: center;
+}
+nav ul li:hover{
+                    background-color: #E2A9F3;
+                    cursor: pointer; 
+}
+h2{
+                    color:black;
+                    font-size:20px;
+                    text-align: center;
+}
+aside{
+                    background-color: #F3E2A9;
+                    text-align: center;
+                    width: 30%;
+                    float: left;
+                    min-height: 500px; 
+}
+#cajaarchivo{
+                    border: 2px solid #886A08;
+                    border-radius: 10px; 
+                    margin: 5px;
+                    padding: 15px 15px 15px 15px;
+}
+
+section{
+                    background-color: #F8ECE0;
+                    width: 70%;
+                    float: left;
+                    min-height: 500px; 
+}
+#tercerparrafo{
+                    color:blue;
+                    text-align: right;
+}
+#cuartoparrafo{
+                    text-align: center;
+}
+
+@-webkit-keyframes movimiento-lateral{
+                    from{left:0px}
+                    to{left:100px}
+}
+.textoanimado{
+                    -webkit-animation-name: movimiento-lateral;
+                    -webkit-animation-duration: 5s;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-direction: alternate;
+                    position:relative; 
+}
+footer p{
+                    color: black;
+                    font-size: 50px;
+                    background-color: white;
+                    clear: both;
+                    text-align: center; 
+}
+
+/******esto es solo para móviles o pantallas pequeñas******/ 
+@media only screen and (max-width: 500px) {
+                    section{
+                                        width:100%;
+                    }
+                    aside{
+                                        width:100%; 
+                    }
+}
